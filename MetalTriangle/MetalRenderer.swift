@@ -20,6 +20,8 @@ class MetalRenderer: NSObject, MTKViewDelegate {
         Vertex(position2d: [1, -1], colorRgb: [1, 0, 0]),
     ]
     
+    private var rotationMatrix = matrix_identity_float4x4
+    
     override init() {
         device = MetalRenderer.createMetalDevice()
         commandQueue = MetalRenderer.createCommandQueue(with: device)
@@ -40,6 +42,10 @@ class MetalRenderer: NSObject, MTKViewDelegate {
         super.init()
     }
     
+    func updateRotation(angle: Float) {
+        rotationMatrix = float4x4(rotationZ: angle)
+    }
+    
     func mtkView(_ view: MTKView, drawableSizeWillChange size: CGSize) {
     }
     
@@ -53,6 +59,7 @@ class MetalRenderer: NSObject, MTKViewDelegate {
             
             renderEncoder.setRenderPipelineState(pipelineState)
             renderEncoder.setVertexBuffer(vertexBuffer, offset: 0, index: 0)
+            renderEncoder.setVertexBytes(&rotationMatrix, length: MemoryLayout<simd_float4x4>.stride, index: 1)
             renderEncoder.drawPrimitives(type: .triangle, vertexStart: 0, vertexCount: 3)
             
             renderEncoder.endEncoding()

@@ -15,6 +15,7 @@
 		11371DF42BEFD09600A6A857 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 11371DF32BEFD09600A6A857 /* Shaders.metal */; };
 		11371DF72BF0B55D00A6A857 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11371DF62BF0B55D00A6A857 /* MetalView.swift */; };
 		11371DFB2BF0B75E00A6A857 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11371DFA2BF0B75E00A6A857 /* Vertex.swift */; };
+		11371DFD2BF0DEDD00A6A857 /* Rotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11371DFC2BF0DEDD00A6A857 /* Rotations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		11371DF32BEFD09600A6A857 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
 		11371DF62BF0B55D00A6A857 /* MetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
 		11371DFA2BF0B75E00A6A857 /* Vertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		11371DFC2BF0DEDD00A6A857 /* Rotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rotations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				11371DF62BF0B55D00A6A857 /* MetalView.swift */,
 				11371DE32BEFC6D000A6A857 /* ContentView.swift */,
+				11371DFC2BF0DEDD00A6A857 /* Rotations.swift */,
 				11371DEF2BEFC80700A6A857 /* MetalRenderer.swift */,
 				11371DF32BEFD09600A6A857 /* Shaders.metal */,
 				11371DFA2BF0B75E00A6A857 /* Vertex.swift */,
@@ -152,6 +155,7 @@
 				11371DF42BEFD09600A6A857 /* Shaders.metal in Sources */,
 				11371DE42BEFC6D000A6A857 /* ContentView.swift in Sources */,
 				11371DF72BF0B55D00A6A857 /* MetalView.swift in Sources */,
+				11371DFD2BF0DEDD00A6A857 /* Rotations.swift in Sources */,
 				11371DF02BEFC80700A6A857 /* MetalRenderer.swift in Sources */,
 				11371DE22BEFC6D000A6A857 /* MetalTriangleApp.swift in Sources */,
 				11371DFB2BF0B75E00A6A857 /* Vertex.swift in Sources */,
